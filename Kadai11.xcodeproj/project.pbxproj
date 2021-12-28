@@ -11,6 +11,7 @@
 		BF4EE7BE277B1EE2003D6045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EE7BD277B1EE2003D6045 /* ContentView.swift */; };
 		BF4EE7C0277B1EE4003D6045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4EE7BF277B1EE4003D6045 /* Assets.xcassets */; };
 		BF4EE7C3277B1EE4003D6045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4EE7C2277B1EE4003D6045 /* Preview Assets.xcassets */; };
+		BF4EE7CB277B1F7F003D6045 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EE7CA277B1F7F003D6045 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BF4EE7BD277B1EE2003D6045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF4EE7BF277B1EE4003D6045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4EE7C2277B1EE4003D6045 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF4EE7CA277B1F7F003D6045 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BF4EE7BB277B1EE2003D6045 /* Kadai11App.swift */,
 				BF4EE7BD277B1EE2003D6045 /* ContentView.swift */,
+				BF4EE7CA277B1F7F003D6045 /* TableView.swift */,
 				BF4EE7BF277B1EE4003D6045 /* Assets.xcassets */,
 				BF4EE7C1277B1EE4003D6045 /* Preview Content */,
 			);
@@ -77,6 +80,7 @@
 				BF4EE7B4277B1EE2003D6045 /* Sources */,
 				BF4EE7B5277B1EE2003D6045 /* Frameworks */,
 				BF4EE7B6277B1EE2003D6045 /* Resources */,
+				BF4EE7C9277B1F36003D6045 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,12 +136,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF4EE7C9277B1F36003D6045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF4EE7B4277B1EE2003D6045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF4EE7BE277B1EE2003D6045 /* ContentView.swift in Sources */,
+				BF4EE7CB277B1F7F003D6045 /* TableView.swift in Sources */,
 				BF4EE7BC277B1EE2003D6045 /* Kadai11App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
