@@ -16,7 +16,7 @@ struct ContentView: View {
             Text("都道府県")
             Text("\(selectText ?? "未選択")")
             Button("変更") {
-                isShowModal.toggle()
+                isShowModal = true
             }
         }
         .fullScreenCover(isPresented: $isShowModal) {
@@ -51,14 +51,14 @@ struct TableView: View {
                 ForEach(prefectures, id: \.self) { prefecture in
                     Button(action: {
                         selectText = prefecture
-                        isShowModal.toggle()
+                        isShowModal = false
                     }, label: { Text(prefecture).foregroundColor(.black) })
                 }
             }
             .navigationBarTitle("都道府県", displayMode: .inline)
             .toolbar {
                 Button("Cancel") {
-                    isShowModal.toggle()
+                    isShowModal = false
                 }
             }
         }
